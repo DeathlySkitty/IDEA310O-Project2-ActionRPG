@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+    path: Assets/Creator Kit - Beginner Code/Scenes/ExampleScene.unity
+    guid: ff09c31ad1e1ae44c8a2939b67d1180f
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4d7522fed31730047af9213a84e0296a,
+      type: 2}
