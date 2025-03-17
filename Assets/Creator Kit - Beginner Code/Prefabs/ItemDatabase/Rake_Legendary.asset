@@ -47,6 +47,7 @@ MonoBehaviour:
     MaxRange: 3
   AttackEffects:
   - {fileID: 4841781022570347412}
+  - {fileID: 9178469412765224242}
 --- !u!114 &4841781022570347412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,4 +63,21 @@ MonoBehaviour:
   Description: Weapon comes with a Burn Effect so you can char your enemies
   PercentageChance: 50
   Damage: 5
-  Time: 20
+  Time: 5
+--- !u!114 &9178469412765224242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c588aae57df9f34da720dc735328284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: Electrical Attack
+  InitalDamage: 10
+  DamageContinued: 3
+  Duration: 2
+  Interval: 5
