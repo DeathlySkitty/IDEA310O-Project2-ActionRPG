@@ -145,6 +145,10 @@ namespace CreatorKitCode
     
 
         public int CurrentHealth { get; private set; }
+        public int CurrentStrength { get; private set; }
+        public int CurrentDefense { get; private set; }
+        public int CurrentAgility { get; private set; }
+
         public List<BaseElementalEffect> ElementalEffects => m_ElementalEffects;
         public List<TimedStatModifier> TimedModifierStack => m_TimedModifierStack;
 
@@ -298,6 +302,22 @@ namespace CreatorKitCode
         {
             CurrentHealth = Mathf.Clamp(CurrentHealth + amount, 0, stats.health);
         }
+        
+        public void ChangeStrength(int amount)
+        {
+            CurrentStrength = Mathf.Clamp(CurrentStrength + amount, 0, stats.strength);
+        }
+
+        public void ChangeDefense(int amount)
+        {
+            CurrentDefense = Mathf.Clamp(CurrentDefense + amount, 0, stats.defense);
+        }
+
+        public void ChangeAgility(int amount)
+        {
+            CurrentAgility = Mathf.Clamp(CurrentAgility + amount, 0, stats.agility);
+        }
+
 
         void UpdateFinalStats()
         {
@@ -328,6 +348,10 @@ namespace CreatorKitCode
                 float percentage = CurrentHealth / (float)previousHealth;
                 CurrentHealth = Mathf.RoundToInt(percentage * stats.health );
             }
+
+            CurrentStrength = Mathf.Clamp(CurrentStrength, 0, stats.strength);
+            CurrentDefense = Mathf.Clamp(CurrentDefense, 0, stats.strength);
+            CurrentAgility = Mathf.Clamp(CurrentAgility, 0, stats.strength);
         }
 
         /// <summary>

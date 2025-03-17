@@ -8,7 +8,7 @@ public class IncStrengthEffect : UsableItem.UsageEffect
     public int StrengthIncrease;
     public override bool Use(CharacterData user)
     {
-        user.Stats.AddModifier.StrengthIncrease;
-        return false;
+        user.Stats.ChangeStrength(StrengthIncrease);
+        return true;
     }
 }
