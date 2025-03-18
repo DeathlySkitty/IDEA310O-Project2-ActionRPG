@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "IDEA310O-Project2-ActionRPG.sln"
+    "dotnet.defaultSolution": "IDEA310O-Project2-ActionRPG.sln",
+    "dotnet.preferCSharpExtension": true
 }
