@@ -9,5 +9,5 @@ EditorBuildSettings:
     path: Assets/Creator Kit - Beginner Code/Scenes/ExampleScene.unity
     guid: ff09c31ad1e1ae44c8a2939b67d1180f
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4d7522fed31730047af9213a84e0296a,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5bb3fb74f972e4045b59b18b489fec8f,
       type: 2}
